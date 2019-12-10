@@ -17,19 +17,18 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>js数组小技巧笔记 | 萌小清</title>
+  <title>js数组小技巧 | 萌小清</title>
   <meta name="description" content="js数组小技巧笔记1. 删除数组的重复项1let arr &#x3D; [&quot;banna&quot;,&quot;apple&quot;,&quot;orange&quot;,&quot;watermelon&quot;,&quot;apple&quot;,&quot;orange&quot;];2&#x2F;&#x2F; 方式一3let uniqueArr &#x3D; Array.from(new Set(arr));4console.log(uniqueArr); &#x2F;&#x2F;[&quot;banna&quot;, &quot;apple&quot;, &quot;orange&quot;, &quot;waterm">
-<meta name="keywords" content="js">
-<meta property="og:type" content="article">
-<meta property="og:title" content="js数组小技巧笔记">
-<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;2019&#x2F;12&#x2F;07&#x2F;js1&#x2F;index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="js数组小技巧">
+<meta property="og:url" content="http:&#x2F;&#x2F;yoursite.com&#x2F;archives&#x2F;js2.html">
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="js数组小技巧笔记1. 删除数组的重复项1let arr &#x3D; [&quot;banna&quot;,&quot;apple&quot;,&quot;orange&quot;,&quot;watermelon&quot;,&quot;apple&quot;,&quot;orange&quot;];2&#x2F;&#x2F; 方式一3let uniqueArr &#x3D; Array.from(new Set(arr));4console.log(uniqueArr); &#x2F;&#x2F;[&quot;banna&quot;, &quot;apple&quot;, &quot;orange&quot;, &quot;waterm">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-12-10T16:36:04.982Z">
+<meta property="og:updated_time" content="2019-12-10T16:28:32.609Z">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://yoursite.com/2019/12/07/js1/index.html">
+  <link rel="canonical" href="http://yoursite.com/archives/js2.html">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -263,14 +262,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-js1" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="page-" class="article article-type-page" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      js数组小技巧笔记
+      js数组小技巧
     </h1>
   
 
@@ -278,26 +277,16 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2019/12/07/js1/" class="article-date">
-	  <time datetime="2019-12-07T07:46:53.000Z" itemprop="datePublished">2019-12-07</time>
+	<a href="/archives/js2.html" class="article-date">
+	  <time datetime="2019-12-10T16:07:11.000Z" itemprop="datePublished">2019-12-11</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/js%E5%9F%BA%E7%A1%80/">js基础</a>
-  </span>
-
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/js/" rel="tag">js</a>
-  </span>
-
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2019/12/07/js1/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/archives/js2.html#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
@@ -309,7 +298,7 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>(); <span class="comment">// 空Map</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Adam'</span>, <span class="number">67</span>); <span class="comment">// 添加新的key-value</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Bob'</span>, <span class="number">59</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">m.has(<span class="string">'Adam'</span>); <span class="comment">// 是否存在key 'Adam': true</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">m.get(<span class="string">'Adam'</span>); <span class="comment">// 67</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">m.delete(<span class="string">'Adam'</span>); <span class="comment">// 删除key 'Adam'</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">7</span></pre></td><td class="code"><pre><span class="line">m.get(<span class="string">'Adam'</span>); <span class="comment">// undefined</span></span></pre></td></tr></table></figure>
 
 <p>由于一个key只能对应一个value，所以，多次对一个key放入value，后面的值会把前面的值冲掉：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Adam'</span>, <span class="number">67</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Adam'</span>, <span class="number">88</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">m.get(<span class="string">'Adam'</span>); <span class="comment">// 88</span></span></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> m = <span class="keyword">new</span> <span class="built_in">Map</span>();</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Adam'</span>, <span class="number">67</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line">m.set(<span class="string">'Adam'</span>, <span class="number">88</span>);</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line">m.get(<span class="string">'Adam'</span>); <span class="comment">// 88</span></span></pre></td></tr></table></figure>
 
 <h5 id="Set"><a href="#Set" class="headerlink" title="Set"></a>Set</h5><p><code>Set</code>和<code>Map</code>类似，也是一组key的集合，但不存储value。由于key不能重复，所以，在<code>Set</code>中，没有重复的key。</p>
 <p>要创建一个<code>Set</code>，需要提供一个<code>Array</code>作为输入，或者直接创建一个空<code>Set</code>：</p>
@@ -374,7 +363,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://yoursite.com/2019/12/07/js1/" title="js数组小技巧笔记" target="_blank" rel="external">http://yoursite.com/2019/12/07/js1/</a>
+      <a href="http://yoursite.com/archives/js2.html" title="js数组小技巧" target="_blank" rel="external">http://yoursite.com/archives/js2.html</a>
     </li>
     
     <li class="post-copyright-license">
@@ -417,16 +406,6 @@
 
   <nav class="bar bar-footer clearfix" data-stick-bottom>
   <div class="bar-inner">
-  
-  <ul class="pager pull-left">
-    
-    
-    <li class="next">
-      <a href="/2019/12/06/hello-world/" title="Hello World"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
-    </li>
-    
-    
-  </ul>
   
   
   <!-- Button trigger modal -->
@@ -534,10 +513,6 @@ window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
 <script src="/js/insight.js"></script>
 
 
-
-
-
-   
 
 
 
